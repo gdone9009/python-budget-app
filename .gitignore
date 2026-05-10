@@ -216,3 +216,21 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- Custom Ignore for Budget App ---
+
+# 1. 임시 파일 무시 (원자적 저장을 위해 만든 temp 파일)
+*.temp
+
+# 2. 내보내기/가져오기 테스트용 파일 무시
+export.csv
+import.csv
+
+# 3. OS 자동 생성 파일 무시 (macOS / Windows)
+.DS_Store
+Thumbs.db
+
+# (선택) 4. 가계부 실제 데이터 무시
+# 만약 나의 진짜 수입/지출 내역을 GitHub에 올리고 싶지 않다면 주석을 해제하세요.
+# data/transactions.csv
+# data/budgets.csv
